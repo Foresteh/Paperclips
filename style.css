@@ -1,11 +1,15 @@
 body {
     font-family: Arial, sans-serif;
+    /* sets the font of the page to arial (or sans-serif if arial is unavailable) */
     text-align: center;
+    /* centers the text horizontally */
     padding: 20px;
+    /* Adds padding (empty space) around the body content on all four sides*/
 }
 
 button {
     padding: 12px 24px;
+     /* Adds padding (empty space) around the body content on all four sides*/
     font-size: 18px;
     cursor: pointer;
     min-width: 100px;
