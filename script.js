@@ -15,7 +15,7 @@ function closeModal() {
 document.getElementById("showPopup").addEventListener("click", openModal);
 // .addEventListener activates the function "openModal" when the element "showPopup" is clicked
 document.getElementById("showPopup").addEventListener("touchstart", openModal);
-// touchstart is when the user begins the touch unlinke touchend or touchmove.
+// touchstart is when the user begins the touch unlike touchend or touchmove.
 
 document.getElementById("closePopup").addEventListener("click", closeModal);
 document.getElementById("closePopup").addEventListener("touchstart", closeModal);
