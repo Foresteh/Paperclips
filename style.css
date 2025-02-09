@@ -13,7 +13,7 @@ button {
     /* Adds padding (inner space) inside the button on all four sides, does not impact spacing around the button itself*/ 
     font-size: 18px;
     cursor: pointer;
-    /* changes the cursor to a pointer (hand) when hovering over the button */
+    /* changes the cursor to a pointer (hand) when hovering over the button AAAAAAAAAAA*/
     min-width: 100px;
     min-height: 50px;
 }
