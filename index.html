@@ -20,20 +20,24 @@
     <h1>Welcome to My Website V2</h1>
     <!-- display heading -->
     <button id="showPopup">Click Me</button>
-    <!-- creates a button with the id "showPopup" (name), js file describes what the button does-->
+    <!-- creates a button with the id "showPopup" (unique name), js file describes what the button does-->
     
     <!-- Pop-up Modal -->
     <div class="modal" id="popup">
     <!-- the div tag is used as a container to group html elements for easier styling and layouts -->
-    <!-- creates a modal (pop-up) with the id "popup" (name) and class "modal" (group) -->
+    <!-- creates a modal (pop-up) with the id "popup" (unique name) and class "modal" (group) -->
+    <!-- use of class here is unnecessary but useful if expanding program -->
     <!-- this modal is hidden using css -->
         <div class="modal-content">
              <!-- additional div tag to help formatting and styling (not necessary) -->
             <p>Hello! This is an interactive pop-up.</p>
+            <!-- paragraph tag for text -->
             <button id="closePopup">Close</button>
+            <!-- second button with unique id -->
         </div>
     </div>
 
     <script src="script.js"></script>
+    <!-- specifies the location of script -->
 </body>
 </html>
