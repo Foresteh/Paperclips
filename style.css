@@ -18,6 +18,10 @@ button {
     min-height: 50px;
 }
 
+#myButton {
+    margin-top: 100px;
+}
+
 /* Modal Styling */
 .modal {
     display: none;
