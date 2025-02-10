@@ -18,8 +18,13 @@ button {
     min-height: 50px;
 }
 
-#myButton {
-    margin-top: 100px;
+#showPopup {
+    position: absolute;
+    /* use absolute instead of relative position on the screen (not affected by previous elements)*/
+    bottom: 20%;
+    /* appears 20% of the screen from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Modal Styling */
