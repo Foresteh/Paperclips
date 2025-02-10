@@ -1,16 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    /* sets the font of the page to arial (or sans-serif if arial is unavailable) */
-    text-align: center;
-    /* centers the text horizontally */
-    padding: 20px;
-    /* Adds padding (inner space) around the body content on all four sides */
-    /* pixels are a fixed unit and does not scale */
-    /* position: relative; */
-    /* setting position: relative; on the <body> ensures that absolutely positioned child elements are positioned relative to the body instead of the entire viewport */
-    /* height: 100vh; */
-    /* Ensure body takes up the full height of the viewport */
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
+
 
 button {
     padding: 12px 24px;
@@ -23,7 +19,7 @@ button {
 }
 
 #showPopup {
-    position: absolute;
+    position: fixed;
     /* use absolute instead of relative position on the screen (not affected by previous elements), must have a positioned ancestor (body in this case) */
     bottom: 20px;
     /* appears 20% of the screen from the bottom */
