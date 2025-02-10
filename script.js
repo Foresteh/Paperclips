@@ -33,10 +33,11 @@ function acceptPopup() {
 }
 
 // Add event listeners for both click and touch events to support pc and mobile use
-document.getElementById("showPopup").addEventListener("click", clickButton);
-// .addEventListener activates the function "openModal" when the element "showPopup" is clicked
-document.getElementById("showPopup").addEventListener("touchstart", clickButton);
-// touchstart is when the user begins the touch unlike touchend or touchmove.
 
-document.getElementById("closePopup").addEventListener("click", declinePopup);
-document.getElementById("closePopup").addEventListener("touchstart", declinePopup);
+if ("ontouchstart" in window) {
+    document.getElementById("showPopup").addEventListener("touchstart", clickButton);
+    document.getElementById("closePopup").addEventListener("touchstart", declinePopup);
+} else {
+    document.getElementById("showPopup").addEventListener("click", clickButton);
+    document.getElementById("closePopup").addEventListener("click", declinePopup);
+}
