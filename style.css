@@ -1,10 +1,15 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif, Arial;
     text-align: center;
     padding: 20px;
 }
 
 button {
+    color: #000; /* Reset the text color */
+    background: none; /* Remove background */
+    border: 2px solid #ccc; /* Remove border */
+    border-radius: 10px;
+    /* outline: none; /* Remove outline */
     padding: 12px 24px;
     /* Adds padding (inner space) inside the button on all four sides, does not impact spacing around the button itself*/ 
     font-size: 18px;
@@ -15,8 +20,38 @@ button {
 }
 
 #showPopup {
-    margin-top: 400px;
+    margin-top: 500px;
 }
+
+#countPaperclips {
+    display:none;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%); /* Centers it horizontally */
+    border: 2px solid black;
+    padding: 20px;
+    width: 60%;
+    justify-content: center;
+}
+
+.upgrades {
+    display: none;
+}
+
+#upgradeText {
+    position: absolute;
+    top: 230px;
+    left: 10%;
+    font-size: 10px;
+}
+
+#jukeboxButton {
+    position: absolute;
+    top: 45px;
+    
+}
+
 
 /* Modal Styling */
 .modal {
