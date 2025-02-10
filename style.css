@@ -6,9 +6,10 @@ body {
     padding: 20px;
     /* Adds padding (inner space) around the body content on all four sides */
     /* pixels are a fixed unit and does not scale */
-    position: relative;
+    /* position: relative; */
     /* setting position: relative; on the <body> ensures that absolutely positioned child elements are positioned relative to the body instead of the entire viewport */
-    height: 100vh; /* Ensure body takes up the full height of the viewport */
+    /* height: 100vh; */
+    /* Ensure body takes up the full height of the viewport */
 }
 
 button {
