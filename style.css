@@ -1,4 +1,5 @@
 body {
+    touch-action: manipulation;
     font-family: sans-serif, Arial;
     text-align: center;
     padding: 20px;
