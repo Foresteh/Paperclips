@@ -7,8 +7,8 @@ body {
 
 button {
     color: #000; /* Reset the text color */
-    background: none; /* Remove background */
-    border: 2px solid #ccc; /* Remove border */
+    background: #cfcfcf; /* Remove background */
+    border: 2px solid #000000; /* Remove border */
     border-radius: 10px;
     /* outline: none; /* Remove outline */
     padding: 12px 24px;
@@ -16,7 +16,7 @@ button {
     font-size: 18px;
     cursor: pointer;
     /* changes the cursor to a pointer (hand) when hovering over the button AAAAAAAAAAA*/
-    min-width: 100px;
+    min-width: 120px;
     min-height: 50px;
 }
 
@@ -27,35 +27,90 @@ button {
 #countPaperclips {
     display:none;
     position: absolute;
-    top: 80px;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%); /* Centers it horizontally */
     border: 2px solid black;
     padding: 20px;
-    width: 60%;
+    width: 70%;
     justify-content: center;
 }
 
 .upgrades {
     display: none;
+    min-width: 120px;
 }
 
 #upgradeText {
     position: absolute;
-    top: 230px;
-    left: 10%;
+    top: 170px;
+    left: 15%;
     font-size: 10px;
 }
 
 #jukeboxButton {
     position: absolute;
     top: 45px;
-    
+}
+#jukeboxPrice {
+    position: absolute;
+    top:90px;
+    left: 15px;
+    font-size: 14px;
+}
+#proposal {
+    font-weight: bold;
+}
+
+#TOS {
+    font-size: 10px;
+}
+
+.Valentines {
+    display: none;
+}
+
+#middlePart {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Adds spacing between Yippee! and text */
+}
+
+#textContainer {
+    max-width: 500px;  /* Adjust this value to control line breaks */
+    margin: 10px auto; /* Centers it */
+    text-align: left;  /* Aligns text for better readability */
+    word-wrap: break-word; /* Ensures long words don't break layout */
+}
+
+.Image {
+    width: 200px;
+    height: 200px;
+    display: none;
+    position: fixed;
+}
+
+#topleftHeart {
+    top: 0;
+    left: 0;
+}
+#toprightHeart {
+    top: 0;
+    right: 0;
+}
+#botleftHeart {
+    bottom: 0;
+    left: 0;
+}
+#botrightHeart {
+    bottom : 0;
+    right: 0;
 }
 
 
 /* Modal Styling */
 .modal {
+    z-index: 100;
     display: none;
     /* hides modal initally */
     position: fixed;
@@ -69,11 +124,11 @@ button {
     justify-content: center;
     /* centers the content of the modal (modal-content) horizontally */
     align-items: center;
-    /* centers the content of the modal (modal-content) vertically */
 }
 
 .modal-content {
     background: white;
+    margin-top: 95px;
     padding: 20px;
     border-radius: 10px;
     /* rounds the edges of the popup with a radius of 10px */
